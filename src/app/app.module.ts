@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { InfoComponent } from './components/pages/info/info.component';
 import { GalleComponent } from './components/pages/galle/galle.component';
+import { MidisComponent } from './components/pages/midis/midis.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { GalleComponent } from './components/pages/galle/galle.component';
     NavbarComponent,
     FooterComponent,
     InfoComponent,
-    GalleComponent
+    GalleComponent,
+    MidisComponent
   ],
   imports: [
     BrowserModule,
