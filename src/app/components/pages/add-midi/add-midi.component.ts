@@ -39,10 +39,12 @@ export class AddMidiComponent implements OnInit {
       year: []
     });
   }
-  
+  //https://youtu.be/kr43g2gSybo
   guardar(): void {
     var url: string = this.formulario.get("url")?.value;
     url = url.replace("watch?v=", "embed/");
+    url = url.replace("youtu.be", "youtube.com/embed");
+
     this.formulario.patchValue({"url":url})    
     
     const data = {
