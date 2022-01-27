@@ -1,1 +1,17 @@
-<p>midis works!</p>
+<div class="container-sm">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let item of midSer.midi; let i=index">
+            <div class="card">
+                <iframe height="452" [src]="sanitizedVideos[i]" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="card-body">
+                    <h5 class="card-title">{{ item.name }}</h5>
+                    <p class="card-text">{{ item.desc }}</p>
+                    <p class="card-text"><a [href]="item.url">Youtube Link to {{ item.name }} </a></p>
+                    <p class="card-text"><small class="text-muted">{{ item.year }}</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

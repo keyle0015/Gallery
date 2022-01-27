@@ -11,6 +11,7 @@ import { FooterComponent } from './components/shared/footer/footer.component';
 import { InfoComponent } from './components/pages/info/info.component';
 import { GalleComponent } from './components/pages/galle/galle.component';
 import { MidisComponent } from './components/pages/midis/midis.component';
+import { AddMidiComponent } from './components/pages/add-midi/add-midi.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MidisComponent } from './components/pages/midis/midis.component';
     FooterComponent,
     InfoComponent,
     GalleComponent,
-    MidisComponent
+    MidisComponent,
+    AddMidiComponent
   ],
   imports: [
     BrowserModule,
