@@ -19,7 +19,6 @@ export class MidisComponent implements OnInit {
     private sanitizer: DomSanitizer) {
     this.videos = midSer.midi.map(url => url.url);
     this.sanitizedVideos = this.videos.map(url => this.sanitizer.bypassSecurityTrustResourceUrl(url));
-    console.log(this.sanitizedVideos);
   }
   
   ngOnInit(): void {

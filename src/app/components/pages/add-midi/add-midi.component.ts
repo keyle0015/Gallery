@@ -43,7 +43,6 @@ export class AddMidiComponent implements OnInit {
   guardar(): void {
     var url: string = this.formulario.get("url")?.value;
     url = url.replace("watch?v=", "embed/");
-    console.log(url);
     this.formulario.patchValue({"url":url})    
     
     const data = {
@@ -52,7 +51,6 @@ export class AddMidiComponent implements OnInit {
     if (this.formulario.status === 'VALID') {
       this.midSer.midi.push(this.formulario.value);
 
-      console.log(this.midSer.midi);
       this.midSer.postMidi(this.midSer.midi).subscribe(res => {
         console.log(res);
       });
