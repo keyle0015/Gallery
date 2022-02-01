@@ -50,6 +50,7 @@ export class AddMidiComponent implements OnInit {
     const data = {
       [this.c]: this.formulario.value
     };
+    
     if (this.formulario.status === 'VALID') {
       this.midSer.midi.push(this.formulario.value);
 
