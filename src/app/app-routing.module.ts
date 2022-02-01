@@ -8,6 +8,8 @@ import { MidisComponent } from './components/pages/midis/midis.component';
 const routes: Routes = [
   { path: 'Gallery', component: GalleComponent },
   { path: 'midi', component: MidisComponent },
+  { path: 'add', component: InfoComponent },
+  { path: 'add-mid', component: AddMidiComponent },
   { path: '**', redirectTo: 'Gallery', pathMatch: 'full'}
 ];
 
