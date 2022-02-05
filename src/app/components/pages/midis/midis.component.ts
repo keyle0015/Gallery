@@ -12,6 +12,7 @@ export class MidisComponent implements OnInit {
   
   
   videos: any[] = [];
+  link: any[] = [];
   public sanitizedVideos: SafeResourceUrl[] = [];
   c = 0;
   
@@ -19,6 +20,9 @@ export class MidisComponent implements OnInit {
     private sanitizer: DomSanitizer) {
     this.videos = midSer.midi.map(url => url.url);
     this.sanitizedVideos = this.videos.map(url => this.sanitizer.bypassSecurityTrustResourceUrl(url));
+    this.link = this.videos;
+    this.link = this.link.map(function (x) { return x.replace("youtube.com/embed/", "youtube.com/watch?v=") });
+    
   }
   
   ngOnInit(): void {

@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: 'midi', component: MidisComponent },
   { path: 'add', component: InfoComponent },
   { path: 'add-mid', component: AddMidiComponent },
-  { path: '**', redirectTo: 'Gallery', pathMatch: 'full'}
+  { path: '**', redirectTo: '/Gallery', pathMatch: 'full'}
 ];
 
 @NgModule({
